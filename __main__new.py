@@ -15,12 +15,12 @@ def rows_to_dict_list(cursor):
 
 def get_connection_details(indicator, identifier, input_query):
         import key
-        ip = '10.141.58.104'
+        ip = ''
         port = 1521
-        SID = 'NJIO'
+        SID = ''
         dsn_tns = cx_Oracle.makedsn(ip, port, service_name=SID)
-        pwd = key.fetchkey('gAAAAABf8wbPKzV80fuiCiLcmLy1Sgzy-ozWlNcDlvApju-on-Pk4TYY_u3E6Qw9HU_yIEZ60Zo0eUJC7XJMvgoiI43bXgCGkg==')
-        user = 'topstna'
+        pwd = key.fetchkey('')
+        user = ''
         db = cx_Oracle.connect(user, pwd, dsn_tns)
         cursor = db.cursor()
 
