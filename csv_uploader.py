@@ -9,12 +9,12 @@ import pandas as pd
 #import key
 
 def sql_writer(listVals):
-    host = '10.143.182.153'
+    host = ''
     port = 1521
-    SID = 'NJIODEV'
+    SID = ''
     dsn_tns = cx_Oracle.makedsn(host, port, service_name=SID)
-    pwd = 'Eblwdb8#t'
-    user = 'SIJIODB'
+    pwd = ''
+    user = ''
     db = cx_Oracle.connect(user, pwd, dsn_tns)
 
     input_query = "INSERT INTO password_strength(IP,PWD) values(:1,:2)"
