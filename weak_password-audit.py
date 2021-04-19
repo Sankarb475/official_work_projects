@@ -10,12 +10,12 @@ import pandas as pd
 
 def sql_writer(listVals):
     import key
-    host = '10.141.58.104'
+    host = '10.10.10.10'
     port = 1521
-    SID = 'NJIO'
+    SID = 'SANKAR'
     dsn_tns = cx_Oracle.makedsn(host, port, service_name=SID)
-    pwd = key.fetchkey('gAAAAABf8wbPKzV80fuiCiLcmLy1Sgzy-ozWlNcDlvApju-on-Pk4TYY_u3E6Qw9HU_yIEZ60Zo0eUJC7XJMvgoiI43bXgCGkg==')
-    user = 'topstna'
+    pwd = key.fetchkey('<encrypted password>')
+    user = 'sankar.biswas'
     db = cx_Oracle.connect(user, pwd, dsn_tns)
 
     input_query = "INSERT INTO weak_password_audit(IP,pwd_data) values(:1,:2)"
@@ -31,12 +31,12 @@ def sql_writer(listVals):
 
 def delete_old_data(ip):
     import key
-    host = '10.141.58.104'
+    host = '10.10.10.10'
     port = 1521
-    SID = 'NJIO'
+    SID = 'SANKAR'
     dsn_tns = cx_Oracle.makedsn(host, port, service_name=SID)
-    pwd = key.fetchkey('gAAAAABf8wbPKzV80fuiCiLcmLy1Sgzy-ozWlNcDlvApju-on-Pk4TYY_u3E6Qw9HU_yIEZ60Zo0eUJC7XJMvgoiI43bXgCGkg==')
-    user = 'topstna'
+    pwd = key.fetchkey('<password encrypted>')
+    user = 'sankar.biswas'
     db = cx_Oracle.connect(user, pwd, dsn_tns)
 
     input_query = "delete from weak_password_audit where ip in ({0})".format(ip)
