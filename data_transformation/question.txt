@@ -1,0 +1,35 @@
+Ayesha is an avid Voot customer who uses her Mobile, Television, and Laptop to consume shows and movies on the platform.
+
+Over the years Ayesha has seen 100s of episodes of her favourite shows and movies and has a very rich “Watch History”
+
+At Voot, we store this information as user’s log in following format
+
+UserId, episodeId,timestamp,duration 
+52627f47-f078-4168-a64d-b43b0278346f,889090,1594302606,400 
+52627f47-f078-4168-a64d-b43b0278346f,100370,1593697806,30 
+52627f47-f078-4168-a64d-b43b0278346f,300540,1593611406,120 
+52627f47-f078-4168-a64d-b43b0278346f,800910,1589550606,3600 
+52627f47-f078-4168-a64d-b43b0278346f,687100,1589809806,1680 
+52627f47-f078-4168-a64d-b43b0278346f,108456,1590933006,420 
+52627f47-f078-4168-a64d-b43b0278346f,108756,1591105806,670 
+52627f47-f078-4168-a64d-b43b0278346f,300120,1591624206,1540 
+52627f47-f078-4168-a64d-b43b0278346f,891091,1592056206,1266 
+52627f47-f078-4168-a64d-b43b0278346f,900123,1591710606,1080 
+The management has now decided that it wants every user on the platform should be able to see how much time they have spent on Voot every month in My Account Section
+
+We need to use the above input and provide out in the format below
+
+{
+
+	2020: {
+
+		"june": 5156,
+		"may": 5100,
+		"july": 550
+
+	}
+
+}
+Please note. The output can be just System.out.println of a Collection, it doesn’t have to be a json as displayed above
+
+You can use any language of your choice to complete this assignment. Please make sure though, your solution can execute, and you use proper object-oriented design to complete the assignment
